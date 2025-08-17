@@ -16,7 +16,7 @@ int main(void) {
 #### 0.1 ZMIENNE
 ```c
 #include <stdio.h>
-#include <stdbool.h> // Wymagane do użyawnia bool
+#include <stdbool.h> // Wymagane do używania typu bool
 
 int main() {
     // Liczby całkowite
