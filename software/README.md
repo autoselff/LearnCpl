@@ -25,6 +25,20 @@ nvim --version
 
 ```
 
+- JAK SIE PORUSZAĆ?
+
+
+1. i - mode edytowania kodu
+2. Esc - mode zaznaczania i wpisyania komend
+3. strzałki - poruszanie się po kodzie
+
+
+Komendy: 
+```
+:w - zapisz plik
+:q - wyjdż
+```
+
 - Otworz config neovim
 
 ```bash
