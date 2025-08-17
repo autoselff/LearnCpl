@@ -1,5 +1,4 @@
-# Learn
-Private repo to store projectss and sources to learn programming.
+# Learn C
 
 ## ROADMAP
 
@@ -86,6 +85,7 @@ vim.api.nvim_set_keymap('n', '<F2>', ':NvimTreeToggle<CR>', { noremap = true, si
 ```
 
 ## KOMPENDIUM - JĘZYK C
+
 ### 0. PODSTAWY
 ```c
 #include <stdio.h>
@@ -98,6 +98,58 @@ int main(void) {
 ```
 -> Każdy program w C zaczyna się od main(). #define tworzy makro/stałą.
 
+--------------------------------------------------
+#### 0.1. INSTRUKCJE WARUNKOWE
+if
+```c
+if (choice == 0) {
+	printf("Opcja 0\n");
+}
+else if (x == 1) {
+	printf("Opcja 1\n");
+}
+else printf("nie istnieje taka opcja\n");
+```
+switch
+```c
+switch(choice) {
+	case 0:
+		printf("Opcja 0\n");
+		break;
+	case 1:
+		printf("Opcja 1\n");
+		break;
+	default:
+		printf("nie istnieje taka opcja\n");
+		break;
+}
+```
+
+--------------------------------------------------
+#### 0.2 PĘTLE
+for 
+```c
+for(int i = 0; i < 5; i++) {
+	printf("i = %d\n", i);
+}
+```
+
+while
+```c
+
+while(i < 5) { // może też być tu jakiś bool www argumencie
+	printf("i = %d\n", i);
+	i++;
+}
+```
+do-while
+```c
+do {
+	printf("i = %d\n", i);
+	i++;
+} while(i < 5);
+```
+--------------------------------------------------
 ### 1. WCZYTYWANIE DANYCH
 
 #### 1.1. LICZBY
@@ -155,15 +207,15 @@ printf("%d %d\n", a, b);
 --------------------------------------------------
 
 #### 1.5. SZYBSZE ALE MNIEJ BEZPIECZNE vs BEZPIECZNIEJSZE
-- szybkie: 
+-> szybkie: 
 ```c
 scanf("%d", &x); scanf("%s", s);
 ```
-- bezpieczniejsze: fgets() + sscanf()
+-> bezpieczniejsze: fgets() + sscanf()
 
 W praktyce:
-- Do nauki i prostych programów wystarczy scanf.
-- Do większych projektów lepiej trzymać się fgets + sscanf (kontrola błędów i rozmiarów).
+-> Do nauki i prostych programów wystarczy scanf.
+-> Do większych projektów lepiej trzymać się fgets + sscanf (kontrola błędów i rozmiarów).
 
 --------------------------------------------------
 
