@@ -39,7 +39,7 @@ int main(int argc, char* argv[]) {
             }
         }
 
-        SDL_SetRenderDrawColor(renderer, 0, 128, 255, 255); // niebieskie tło
+        SDL_SetRenderDrawColor(renderer, 0, 128, 255, 255);
         SDL_RenderClear(renderer);
         SDL_RenderPresent(renderer);
     }
