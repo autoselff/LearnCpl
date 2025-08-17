@@ -18,9 +18,6 @@ int main(void) {
 #include <stdio.h>
 #include <stdbool.h> // Wymagane do użyawnia bool
 
-#include <stdio.h>
-#include <stdbool.h>  // dla typu bool
-
 int main() {
     // Liczby całkowite
     int a = 10;
@@ -36,7 +33,7 @@ int main() {
     // Typ znakowy
     char h = 'A';
 
-    // Typ logiczny (C99)
+    // Typ logiczny true lub false
     bool boo = true;
 
     // Typ string (tablica znaków)
