@@ -13,7 +13,53 @@ int main(void) {
 -> Każdy program w C zaczyna się od main(). #define tworzy makro/stałą.
 
 --------------------------------------------------
-#### 0.1. INSTRUKCJE WARUNKOWE
+#### 0.1 ZMIENNE
+```c
+#include <stdio.h>
+#include <stdbool.h> // Wymagane do użyawnia bool
+
+#include <stdio.h>
+#include <stdbool.h>  // dla typu bool
+
+int main() {
+    // Liczby całkowite
+    int a = 10;
+    short b = 5;
+    long c = 100000L;
+    long long d = 1000000000LL;
+
+    // Liczby zmiennoprzecinkowe
+    float e = 3.14f;
+    double f = 3.141592;
+    long double g = 3.141592653589793L;
+
+    // Typ znakowy
+    char h = 'A';
+
+    // Typ logiczny (C99)
+    bool boo = true;
+
+    // Typ string (tablica znaków)
+    char str[] = "Hello, world!";
+
+    // Wyświetlenie zmiennych
+    printf("int: %d\n", a);
+    printf("short: %d\n", b);
+    printf("long: %ld\n", c);
+    printf("long long: %lld\n", d);
+    printf("float: %f\n", e);
+    printf("double: %lf\n", f);
+    printf("long double: %Lf\n", g);
+    printf("char: %c\n", h);
+    printf("bool: %d\n", boo);
+    printf("string: %s\n", str);
+
+    return 0;
+}
+```
+
+--------------------------------------------------
+#### 0.2. INSTRUKCJE WARUNKOWE
 if
 ```c
 if (choice == 0) {
@@ -40,7 +86,7 @@ switch(choice) {
 ```
 
 --------------------------------------------------
-#### 0.2 PĘTLE
+#### 0.3 PĘTLE
 for 
 ```c
 for(int i = 0; i < 5; i++) {
