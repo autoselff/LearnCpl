@@ -10,7 +10,9 @@
  Just simple instructions
  ADVANCED LIB -> which will allow programmes to write in really low level
 
- 3. Own program to make bit music with graphicsl interface
+3. Snake - https://github.com/autoselff/snake
+
+ 4. Own program to make bit music with graphicsl interface
 
 
  X. Gameboy emulator
