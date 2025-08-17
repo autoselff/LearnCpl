@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/gbc.dir/main.c.o -o gbc  /usr/lib/x86_64-linux-gnu/libSDL2.so 
