@@ -1,3 +1,0 @@
-/home/autoself/Documents/C25/part1/build/CMakeFiles/Part1.dir
-/home/autoself/Documents/C25/part1/build/CMakeFiles/edit_cache.dir
-/home/autoself/Documents/C25/part1/build/CMakeFiles/rebuild_cache.dir
