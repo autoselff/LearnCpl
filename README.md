@@ -60,9 +60,9 @@ int main() {
 
 --------------------------------------------------
 #### 0.2. INSTRUKCJE WARUNKOWE
-Instrukcje warunkowe jak nazwa wskazuje służą do sprawdzania JAKIŚ warunków, np. czy nasza zmienna jest równa jakiejś wartości - wtedy wykonuje się coś co zdecydujemy, że ma sie wykonać. W przypadku Instrukcji If możemy łatwo obsługiwać inne wypadki instrukcją else która jak nazwa wzkazuje wykonuje podane czynności w PRZECIWNYM WYPADKU.
 
 #### if
+Instrukcje warunkowe jak nazwa wskazuje służą do sprawdzania JAKIŚ warunków, np. czy nasza zmienna jest równa jakiejś wartości - wtedy wykonuje się coś co zdecydujemy, że ma sie wykonać. W przypadku Instrukcji If możemy łatwo obsługiwać inne wypadki instrukcją else która jak nazwa wzkazuje wykonuje podane czynności w PRZECIWNYM WYPADKU.
 ```c
 if (choice == 0) {
 	printf("Opcja 0\n");
@@ -73,8 +73,8 @@ else if (x == 1) {
 else printf("nie istnieje taka opcja\n");
 ```
 
-Instrukcja switch nieco różni się of instrukcji If gdyz nie tyle co sprawdza czy jakiś warunek jest prawdą a porównuje wybraną wartość do JAKIŚ wzorców.
 #### switch
+Instrukcja switch nieco różni się of instrukcji If gdyz nie tyle co sprawdza czy jakiś warunek jest prawdą a porównuje wybraną wartość do JAKIŚ wzorców.
 ```c
 switch(choice) {
 	case 0:
@@ -432,10 +432,7 @@ while(1) {
   int *arr = malloc(10 * sizeof(*arr));
 ```
 - Debugowanie wycieków:
-  używaj narzędzi typu Valgrind (Linux).
-
-  ===================================
-
+  używaj narzędzi typu Valgrind (Linux)
 --------------------------------------------------
 
 ### 6. STRUKTURY I UNION
@@ -781,3 +778,5 @@ clean:
 
 .PHONY: all clean
 ```
+
+Dziekuje za uwage.
