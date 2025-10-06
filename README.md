@@ -14,6 +14,9 @@ int main(void) {
 
 --------------------------------------------------
 #### 0.1 ZMIENNE
+
+Zmienne to miejsca w pamięci komputera, które służą do przechowywania danych. Przydzielając zmiennej nazwę, uzyskujemy łatwy dostęp do konkretnego adresu w pamięci (np. 0x7ffdef32a3bc), w którym może znajdować się wartość, jak np. liczba całkowita, liczba zmiennoprzecinkowa czy znak. Zmienne mają określony typ, co decyduje o rodzaju danych, jakie można w nich przechować, a także zajmowanej przestrzeni pamięci. Dodatkowo, zmienne mają zasięg, co określa, gdzie w kodzie mogą być używane, oraz czas życia, który definiuje, jak długo pozostają aktywne w pamięci.
+
 ```c
 #include <stdio.h>
 #include <stdbool.h> // Wymagane do używania typu bool
@@ -57,7 +60,9 @@ int main() {
 
 --------------------------------------------------
 #### 0.2. INSTRUKCJE WARUNKOWE
-if
+
+#### if
+Instrukcje warunkowe jak nazwa wskazuje służą do sprawdzania JAKIŚ warunków, np. czy nasza zmienna jest równa jakiejś wartości - wtedy wykonuje się coś co zdecydujemy, że ma sie wykonać. W przypadku Instrukcji If możemy łatwo obsługiwać inne wypadki instrukcją else która jak nazwa wzkazuje wykonuje podane czynności w PRZECIWNYM WYPADKU.
 ```c
 if (choice == 0) {
 	printf("Opcja 0\n");
@@ -67,7 +72,9 @@ else if (x == 1) {
 }
 else printf("nie istnieje taka opcja\n");
 ```
-switch
+
+#### switch
+Instrukcja switch nieco różni się of instrukcji If gdyz nie tyle co sprawdza czy jakiś warunek jest prawdą a porównuje wybraną wartość do JAKIŚ wzorców.
 ```c
 switch(choice) {
 	case 0:
@@ -84,14 +91,17 @@ switch(choice) {
 
 --------------------------------------------------
 #### 0.3 PĘTLE
-for 
+
+Pętle są różne ale zadanie mają to samo - powtarzać podane w nich instrukcje do momentu aż jakiś warunek nie zostanie spełniony.
+
+#### for 
 ```c
 for(int i = 0; i < 5; i++) {
 	printf("i = %d\n", i);
 }
 ```
 
-while
+#### while
 ```c
 
 while(i < 5) { // może też być tu jakiś bool www argumencie
@@ -99,7 +109,7 @@ while(i < 5) { // może też być tu jakiś bool www argumencie
 	i++;
 }
 ```
-do-while
+#### do-while
 ```c
 do {
 	printf("i = %d\n", i);
@@ -422,10 +432,7 @@ while(1) {
   int *arr = malloc(10 * sizeof(*arr));
 ```
 - Debugowanie wycieków:
-  używaj narzędzi typu Valgrind (Linux).
-
-  ===================================
-
+  używaj narzędzi typu Valgrind (Linux)
 --------------------------------------------------
 
 ### 6. STRUKTURY I UNION
@@ -771,3 +778,5 @@ clean:
 
 .PHONY: all clean
 ```
+
+Dziekuje za uwage.
