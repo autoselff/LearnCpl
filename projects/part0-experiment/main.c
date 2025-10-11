@@ -44,18 +44,31 @@ void draw_map(Vec2 point_map[], int point_map_size) {
     }
 }
 
+Vec2 make_linear_eq(int i, int a, int b) {
+    Vec2 vec2;
+    vec2.x = i;
+    vec2.y = -a * vec2.x + b;
+
+    return vec2;
+}
+
+Vec2 make_quadratic_eq(int i, int a, int b, int c) {
+    Vec2 vec2;
+
+    vec2.x = i;
+    vec2.y = (-a * (vec2.x * vec2.x)) + (-a * vec2.x) + b;
+
+    return vec2;
+}
+
 int main() {
 
     int a = 1;
     int b = 0;
     Vec2 vec2_array[SIZE];
 
-    for (int i = 0; i < SIZE; ++i) {
-        vec2_array[i].x = i - SIZE / 2;
-        // FUNKCJA KWADRATOWA
-        vec2_array[i].y = (-a * (vec2_array[i].x * vec2_array[i].x)) + (-a * vec2_array[i].x) + b;
-        
-        //-a * vec2_array[i].x + b     FUNKCJA LINIOWA
+    for (int i = -SIZE/2; i < SIZE/2; ++i) {
+        vec2_array[i] = make_linear_eq(i, a, b);
     }
 
     draw_map(vec2_array, SIZE);
